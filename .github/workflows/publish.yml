@@ -27,7 +27,7 @@ jobs:
 
       # npm OIDC trusted publishing needs a recent npm; setup-node ships an older one
       - name: Upgrade npm (OIDC support)
-        run: npm install -g npm@latest
+        run: npm install -g npm@11
 
       - name: Install dependencies
         run: npm ci
