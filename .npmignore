@@ -1,0 +1,9 @@
+src/
+test/
+node_modules/
+tsconfig.json
+vitest.config.ts
+*.tsbuildinfo
+.gitignore
+coverage/
+.DS_Store

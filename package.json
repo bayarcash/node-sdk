@@ -1,0 +1,54 @@
+{
+    "name": "bayarcash",
+    "version": "1.0.0",
+    "description": "Bayarcash payment gateway SDK for Node.js — an idiomatic TypeScript port of the official Bayarcash PHP SDK.",
+    "keywords": [
+        "bayarcash",
+        "payment",
+        "payment-gateway",
+        "fpx",
+        "direct-debit",
+        "duitnow",
+        "malaysia",
+        "sdk"
+    ],
+    "license": "MIT",
+    "author": "Khairul Imran <infrastructure@webimpian.com>",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/bayarcash/node-sdk.git"
+    },
+    "homepage": "https://bayarcash.com/",
+    "engines": {
+        "node": ">=18"
+    },
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "require": "./dist/index.js",
+            "import": "./dist/index.js",
+            "default": "./dist/index.js"
+        }
+    },
+    "files": [
+        "dist",
+        "LICENSE",
+        "README.md"
+    ],
+    "scripts": {
+        "build": "tsc -p tsconfig.json",
+        "clean": "rm -rf dist",
+        "prepare": "npm run build",
+        "prepublishOnly": "npm run clean && npm run build",
+        "test": "vitest run",
+        "test:watch": "vitest",
+        "typecheck": "tsc --noEmit"
+    },
+    "devDependencies": {
+        "@types/node": "^22.10.0",
+        "typescript": "^5.7.0",
+        "vitest": "^3.0.0"
+    }
+}
