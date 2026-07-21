@@ -11,7 +11,6 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        # Package runs on Node >=18 at runtime; the vitest dev tooling needs >=20 to run.
         node: ['20', '22']
     name: Node ${{ matrix.node }}
     steps:
