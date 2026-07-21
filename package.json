@@ -1,6 +1,6 @@
 {
     "name": "bayarcash",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Bayarcash payment gateway SDK for Node.js — an idiomatic TypeScript port of the official Bayarcash PHP SDK.",
     "keywords": [
         "bayarcash",
